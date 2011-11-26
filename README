@@ -1,6 +1,3 @@
-This repository holds various design files for hardware developed for SectorFej
-products and projects, such as the Bluegiga WT12 breakout boards.
+This repository holds various design files for hardware developed for SectorFej products and projects, such as the Bluegiga WT12 breakout boards.
 
-For modules that have multiple versions published, it is usually desirable to
-use the most recent version unless you have a very specific reason not to. Duh,
-I know.
+For modules that have multiple versions published, it is usually desirable to use the most recent version unless you have a very specific reason not to. Duh, I know.
