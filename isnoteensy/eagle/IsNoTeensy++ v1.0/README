@@ -1,4 +1,6 @@
-The AT90USB1286 (or its host-capable 1287 counterpart) is one of the most compact and comprehensively powerful AVR microcontrollers I have had the pleasure of using so far. If you're looking to integrate this MCU into one of your projects, the IsNoTeensy++ design is a perfect starting point.
+The AT90USB1286 (or its host-capable 1287 counterpart) is one of the most compact and comprehensively powerful AVR microcontrollers I have had the pleasure of using so far. If you're looking to integrate this MCU into one of your projects, the IsNoTeensy++ design is a perfect starting point. Details on the design process available here:
+
+http://www.sectorfej.net/2012/02/24/isnoteensy-clone-schematic-and-pcb-for-at90usb1286-7-projects
 
 Let me be extremely up-front about something: I am not trying to steal market share from Paul over at PJRC, the guy behind the real Teensy++. The IsNoTeensy++ is an almost perfect clone of the circuit and PCB layout, but it is not exactly the same thing as a real Teensy from PRJC for a few critical reasons:
 
