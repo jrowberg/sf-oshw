@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -124,6 +124,7 @@
 &lt;ul&gt;
 &lt;li&gt;BLE112-A, BLE112-E&lt;/li&gt;
 &lt;li&gt;BLE113-A&lt;/li&gt;
+&lt;li&gt;BLE121LR-A&lt;/li&gt;
 &lt;li&gt;BT111-A&lt;/li&gt;
 &lt;li&gt;WT11i-A, WT11i-E&lt;/li&gt;
 &lt;li&gt;WT12-A&lt;/li&gt;
@@ -139,7 +140,7 @@
 &lt;p&gt;In addition, each module includes a logical pin layout symbol as well as a visual pin layout symbol. The corresponding packages are the same, but depending on your needs or preferences, you may prefer one over the other. For example, using a visual pin layout symbol makes the creation of breakout boards incredibly simple. Visual symbols are denoted by a &lt;strong&gt;-VISUAL&lt;/strong&gt; suffix on the part name.&lt;/p&gt;
 
 &lt;p&gt;Created by Jeff Rowberg&lt;br /&gt;&lt;a href="mailto:jeff@rowberg.net"&gt;jeff@rowberg.net&lt;/a&gt;&lt;br /&gt;&lt;a href="http://www.sectorfej.net"&gt;www.sectorfej.net&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Last updated 1/1/2014&lt;/em&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;em&gt;Last updated 2014-05-21&lt;/em&gt;&lt;/p&gt;</description>
 <packages>
 <package name="WT12-A-SHORTRF">
 <description>&lt;p&gt;Bluegiga WT12 class 2 Bluetooth 2.1 + EDR module. WT12-A variant has an on-module ceramic chip antenna.&lt;/p&gt;
@@ -1655,6 +1656,65 @@
 <circle x="3.715" y="9.54" radius="0.782621875" width="0.127" layer="51"/>
 <text x="4.715" y="7.54" size="0.6096" layer="51" rot="R180">U.Fl</text>
 </package>
+<package name="BLE121LR-A">
+<description>&lt;p&gt;Bluetooth Low Energy single-mode long-range module - Bluetooth 4.0 (CC2541). BLE121LR-A variant has an on-module ceramic chip antenna.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BLE121LR-A variant includes keepout/restrict area. Antenna edge of the module should be flush up against the edge of the PCB. See datasheet for variant layout details. &lt;span style="color: #F00;"&gt;IT IS EXTREMELY IMPORTANT THAT YOU FOLLOW THE LAYOUT GUIDELINES FOR THIS MODULE IN ORDER TO ENSURE MAXIMUM RANGE. THIS MEANS THAT YOU NEED A SOLID GROUND PLANE EXTENDING AT LEAST &lt;span style="background: #FF0;"&gt;&amp;nbsp;17 mm&amp;nbsp;&lt;/span&gt; ON THE LEFT AND RIGHT SIDES OF THE MODULE, AS SHOWN IN THE DATASHEET.&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;BLE121LR is a Bluetooth Smart Long Range module targeted for Bluetooth Smart applications where the best possible RF performance and range are required. At +8 dBm TX power and -98 dBm sensitivity BLE121LR has best-in-class RF performance and can provide Bluetooth Smart connectivity up to 450 meters. BLE121LR integrates all features required for a Bluetooth Smart application: Bluetooth radio, software stack and GATT based profiles. and it can also host end user applications, which means no external micro controller is required in size, price or power constrained devices. BLE121LR Bluetooth Smart module also has flexible hardware interfaces to connect to different peripherals or sensors. Although BLE121LR Bluetooth Smart Long Range Module is target for applications requiring high RF performance, it is still has relatively low power consumption and can be power using a standard 3V coin cell batteries.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.bluegiga.com/en-US/products/bluetooth-4.0-modules/ble121lr-bluetooth--smart-long"&gt;https://www.bluegiga.com/en-US/products/bluetooth-4.0-modules/ble121lr-bluetooth--smart-long&lt;/a&gt;&lt;br /&gt;&lt;a href="https://github.com/jrowberg/sf-oshw"&gt;https://github.com/jrowberg/sf-oshw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Last updated 2014-08-02 by Jeff Rowberg &amp;lt;jeff@rowberg.net&amp;gt;&lt;/em&gt;&lt;/p&gt;</description>
+<wire x1="-7.35" y1="-6.5" x2="-7.35" y2="6.5" width="0.127" layer="21"/>
+<wire x1="-7.35" y1="6.5" x2="7.35" y2="6.5" width="0.127" layer="21"/>
+<wire x1="7.35" y1="6.5" x2="7.35" y2="-6.5" width="0.127" layer="21"/>
+<wire x1="7.35" y1="-6.5" x2="-7.35" y2="-6.5" width="0.127" layer="21"/>
+<smd name="P0_4" x="-6.45" y="-1.35" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="P0_3" x="-6.45" y="-0.45" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="RESET" x="-6.45" y="0.45" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="P0_0" x="-6.45" y="1.35" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="P0_1" x="-6.45" y="2.25" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="P0_2" x="-6.45" y="3.15" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@10" x="6.45" y="3.15" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@11" x="6.45" y="4.05" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@12" x="6.45" y="4.95" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@13" x="6.45" y="5.85" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@3" x="-6.45" y="4.05" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@2" x="-6.45" y="4.95" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND" x="-6.45" y="5.85" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="P1_6" x="-1.35" y="-5.6" dx="0.5" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="GND@6" x="-2.25" y="-5.6" dx="0.5" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="GND@5" x="-3.15" y="-5.6" dx="0.5" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="GND@4" x="-4.05" y="-5.6" dx="0.5" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="AVDD" x="-4.95" y="-5.6" dx="0.5" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="P0_7" x="-6.45" y="-4.05" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="P0_6" x="-6.45" y="-3.15" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="P0_5" x="-6.45" y="-2.25" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="DCDC" x="-0.45" y="-5.6" dx="0.5" dy="2" layer="1" roundness="100"/>
+<smd name="P2_0" x="0.45" y="-5.6" dx="0.5" dy="2" layer="1" roundness="100"/>
+<smd name="P2_1" x="1.35" y="-5.6" dx="0.5" dy="2" layer="1" roundness="100"/>
+<smd name="P2_2" x="2.25" y="-5.6" dx="0.5" dy="2" layer="1" roundness="100"/>
+<smd name="GND@7" x="3.15" y="-5.6" dx="0.5" dy="2" layer="1" roundness="100"/>
+<smd name="DVDD" x="4.05" y="-5.6" dx="0.5" dy="2" layer="1" roundness="100"/>
+<smd name="SCL" x="4.95" y="-5.6" dx="0.5" dy="2" layer="1" roundness="100"/>
+<smd name="SDA" x="6.45" y="-4.05" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="NC" x="6.45" y="-3.15" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<text x="-5" y="5.55" size="0.6096" layer="51" rot="SR0">1</text>
+<text x="-5" y="-4.35" size="0.6096" layer="51" rot="SR0">12</text>
+<text x="4" y="-4.35" size="0.6096" layer="51" rot="SR0">25</text>
+<text x="4" y="5.55" size="0.6096" layer="51" rot="SR0">36</text>
+<text x="-7.4" y="7" size="1.016" layer="25" rot="SR0">&gt;NAME</text>
+<text x="-7.4" y="-8" size="1.016" layer="27" rot="SR0">&gt;VALUE</text>
+<smd name="P1_5" x="6.45" y="-2.25" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="P1_4" x="6.45" y="-1.35" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="P1_3" x="6.45" y="-0.45" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="P1_2" x="6.45" y="0.45" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@8" x="6.45" y="1.35" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@9" x="6.45" y="2.25" dx="0.5" dy="2" layer="1" roundness="100" rot="R90"/>
+<rectangle x1="-3.75" y1="3.05" x2="3.75" y2="6.5" layer="39"/>
+<rectangle x1="-3.75" y1="3.05" x2="3.75" y2="6.5" layer="40"/>
+<rectangle x1="-3.75" y1="3.05" x2="3.75" y2="6.5" layer="41"/>
+<rectangle x1="-3.75" y1="3.05" x2="3.75" y2="6.5" layer="42"/>
+<rectangle x1="-3.75" y1="3.05" x2="3.75" y2="6.5" layer="43"/>
+<rectangle x1="-2" y1="5" x2="1" y2="6" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="WT12-A">
@@ -2890,6 +2950,87 @@
 <pin name="VDD_PADS" x="20.32" y="5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="VREG_EN_RST#" x="20.32" y="7.62" visible="pin" length="short" direction="in" rot="R180"/>
 <wire x1="-1.524" y1="8.636" x2="15.24" y2="8.636" width="0.127" layer="97"/>
+</symbol>
+<symbol name="BLE121LR-A">
+<description>&lt;p&gt;Bluegiga BLE121LR-A symbol with pins arranged into logical groups.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Last updated 2014-08-02 by Jeff Rowberg&lt;br /&gt;&lt;a href="https://github.com/jrowberg/sf-oshw"&gt;https://github.com/jrowberg/sf-oshw&lt;/em&gt;&lt;/p&gt;</description>
+<wire x1="-15.24" y1="20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
+<text x="-15.24" y="21.59" size="2.54" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-24.13" size="2.54" layer="96">&gt;VALUE</text>
+<pin name="GND" x="-17.78" y="17.78" visible="pin" length="short" direction="pwr"/>
+<pin name="AVDD" x="-17.78" y="15.24" visible="pin" length="short" direction="pwr"/>
+<pin name="P2_2" x="17.78" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="P2_1" x="17.78" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="P2_0" x="17.78" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="DCDC" x="17.78" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="P1_6" x="17.78" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="-17.78" y="7.62" visible="pin" length="short" function="clk"/>
+<pin name="SDA" x="-17.78" y="5.08" visible="pin" length="short"/>
+<pin name="P1_5" x="17.78" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="P1_4" x="17.78" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="P1_3" x="17.78" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="P1_2" x="17.78" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="P0_7" x="-17.78" y="-17.78" visible="pin" length="short"/>
+<pin name="DVDD" x="-17.78" y="12.7" visible="pin" length="short" direction="pwr"/>
+<pin name="P0_6" x="-17.78" y="-15.24" visible="pin" length="short"/>
+<pin name="P0_5" x="-17.78" y="-12.7" visible="pin" length="short"/>
+<pin name="P0_4" x="-17.78" y="-10.16" visible="pin" length="short"/>
+<pin name="P0_3" x="-17.78" y="-7.62" visible="pin" length="short"/>
+<pin name="P0_2" x="-17.78" y="-5.08" visible="pin" length="short"/>
+<pin name="P0_1" x="-17.78" y="-2.54" visible="pin" length="short"/>
+<pin name="P0_0" x="-17.78" y="0" visible="pin" length="short"/>
+<pin name="RESET" x="17.78" y="17.78" visible="pin" length="short" direction="in" rot="R180"/>
+<wire x1="12.7" y1="18.796" x2="5.842" y2="18.796" width="0.127" layer="97"/>
+</symbol>
+<symbol name="BLE121LR-A-VISUAL">
+<description>&lt;p&gt;Bluegiga BLE121LR-A symbol with all pins shown according to their physical position on the actual module.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Last updated 2014-08-02 by Jeff Rowberg&lt;br /&gt;&lt;a href="https://github.com/jrowberg/sf-oshw"&gt;https://github.com/jrowberg/sf-oshw&lt;/em&gt;&lt;/p&gt;</description>
+<wire x1="-17.78" y1="20.32" x2="20.32" y2="20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="20.32" x2="20.32" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-22.86" x2="-17.78" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-22.86" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
+<text x="-17.78" y="21.59" size="2.54" layer="95">&gt;NAME</text>
+<text x="7.62" y="21.59" size="2.54" layer="96">&gt;VALUE</text>
+<pin name="GND" x="-20.32" y="17.78" visible="pin" length="short" direction="pwr"/>
+<pin name="AVDD" x="-12.7" y="-25.4" visible="pin" length="short" direction="pwr" rot="R90"/>
+<pin name="P2_2" x="7.62" y="-25.4" visible="pin" length="short" rot="R90"/>
+<pin name="P2_1" x="5.08" y="-25.4" visible="pin" length="short" rot="R90"/>
+<pin name="P2_0" x="2.54" y="-25.4" visible="pin" length="short" rot="R90"/>
+<pin name="DCDC" x="0" y="-25.4" visible="pin" length="short" rot="R90"/>
+<pin name="P1_6" x="-2.54" y="-25.4" visible="pin" length="short" rot="R90"/>
+<pin name="SCL" x="15.24" y="-25.4" visible="pin" length="short" function="clk" rot="R90"/>
+<pin name="SDA" x="22.86" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="P1_5" x="22.86" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="P1_4" x="22.86" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="P1_3" x="22.86" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="P1_2" x="22.86" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="P0_7" x="-20.32" y="-10.16" visible="pin" length="short"/>
+<pin name="DVDD" x="12.7" y="-25.4" visible="pin" length="short" direction="pwr" rot="R90"/>
+<pin name="P0_6" x="-20.32" y="-7.62" visible="pin" length="short"/>
+<pin name="P0_5" x="-20.32" y="-5.08" visible="pin" length="short"/>
+<pin name="P0_4" x="-20.32" y="-2.54" visible="pin" length="short"/>
+<pin name="P0_3" x="-20.32" y="0" visible="pin" length="short"/>
+<pin name="P0_2" x="-20.32" y="10.16" visible="pin" length="short"/>
+<pin name="P0_1" x="-20.32" y="7.62" visible="pin" length="short"/>
+<pin name="P0_0" x="-20.32" y="5.08" visible="pin" length="short"/>
+<pin name="RESET" x="-20.32" y="2.54" visible="pin" length="short" direction="in"/>
+<wire x1="-8.636" y1="3.556" x2="-15.494" y2="3.556" width="0.127" layer="97"/>
+<pin name="GND@2" x="-20.32" y="15.24" visible="pin" length="short" direction="pwr"/>
+<pin name="GND@3" x="-20.32" y="12.7" visible="pin" length="short" direction="pwr"/>
+<pin name="GND@4" x="-10.16" y="-25.4" visible="pin" length="short" direction="pwr" rot="R90"/>
+<pin name="GND@5" x="-7.62" y="-25.4" visible="pin" length="short" direction="pwr" rot="R90"/>
+<pin name="GND@6" x="-5.08" y="-25.4" visible="pin" length="short" direction="pwr" rot="R90"/>
+<pin name="GND@7" x="10.16" y="-25.4" visible="pin" length="short" direction="pwr" rot="R90"/>
+<pin name="GND@8" x="22.86" y="5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GND@9" x="22.86" y="7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GND@10" x="22.86" y="10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="NC" x="22.86" y="-7.62" visible="pin" length="short" direction="nc" rot="R180"/>
+<pin name="GND@11" x="22.86" y="12.7" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GND@12" x="22.86" y="15.24" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GND@13" x="22.86" y="17.78" visible="pin" length="short" direction="pwr" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5011,6 +5152,107 @@
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BLE121LR" prefix="U" uservalue="yes">
+<description>&lt;p&gt;Bluetooth Low Energy single-mode long-range module - Bluetooth 4.0 (CC2541). BLE121LR-A variant has an on-module ceramic chip antenna.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BLE121LR-A variant includes keepout/restrict area. Antenna edge of the module should be flush up against the edge of the PCB. See datasheet for variant layout details. &lt;span style="color: #F00;"&gt;IT IS EXTREMELY IMPORTANT THAT YOU FOLLOW THE LAYOUT GUIDELINES FOR THIS MODULE IN ORDER TO ENSURE MAXIMUM RANGE. THIS MEANS THAT YOU NEED A SOLID GROUND PLANE EXTENDING AT LEAST &lt;span style="background: #FF0;"&gt;&amp;nbsp;17 mm&amp;nbsp;&lt;/span&gt; ON THE LEFT AND RIGHT SIDES OF THE MODULE, AS SHOWN IN THE DATASHEET.&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;BLE121LR is a Bluetooth Smart Long Range module targeted for Bluetooth Smart applications where the best possible RF performance and range are required. At +8 dBm TX power and -98 dBm sensitivity BLE121LR has best-in-class RF performance and can provide Bluetooth Smart connectivity up to 450 meters. BLE121LR integrates all features required for a Bluetooth Smart application: Bluetooth radio, software stack and GATT based profiles. and it can also host end user applications, which means no external micro controller is required in size, price or power constrained devices. BLE121LR Bluetooth Smart module also has flexible hardware interfaces to connect to different peripherals or sensors. Although BLE121LR Bluetooth Smart Long Range Module is target for applications requiring high RF performance, it is still has relatively low power consumption and can be power using a standard 3V coin cell batteries.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.bluegiga.com/en-US/products/bluetooth-4.0-modules/ble121lr-bluetooth--smart-long"&gt;https://www.bluegiga.com/en-US/products/bluetooth-4.0-modules/ble121lr-bluetooth--smart-long&lt;/a&gt;&lt;br /&gt;&lt;a href="https://github.com/jrowberg/sf-oshw"&gt;https://github.com/jrowberg/sf-oshw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Last updated 2014-08-02 by Jeff Rowberg &amp;lt;jeff@rowberg.net&amp;gt;&lt;/em&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="BLE121LR-A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-A" package="BLE121LR-A">
+<connects>
+<connect gate="G$1" pin="AVDD" pad="AVDD"/>
+<connect gate="G$1" pin="DCDC" pad="DCDC"/>
+<connect gate="G$1" pin="DVDD" pad="DVDD"/>
+<connect gate="G$1" pin="GND" pad="GND GND@2 GND@3 GND@4 GND@5 GND@6 GND@7 GND@8 GND@9 GND@10 GND@11 GND@12 GND@13"/>
+<connect gate="G$1" pin="P0_0" pad="P0_0"/>
+<connect gate="G$1" pin="P0_1" pad="P0_1"/>
+<connect gate="G$1" pin="P0_2" pad="P0_2"/>
+<connect gate="G$1" pin="P0_3" pad="P0_3"/>
+<connect gate="G$1" pin="P0_4" pad="P0_4"/>
+<connect gate="G$1" pin="P0_5" pad="P0_5"/>
+<connect gate="G$1" pin="P0_6" pad="P0_6"/>
+<connect gate="G$1" pin="P0_7" pad="P0_7"/>
+<connect gate="G$1" pin="P1_2" pad="P1_2"/>
+<connect gate="G$1" pin="P1_3" pad="P1_3"/>
+<connect gate="G$1" pin="P1_4" pad="P1_4"/>
+<connect gate="G$1" pin="P1_5" pad="P1_5"/>
+<connect gate="G$1" pin="P1_6" pad="P1_6"/>
+<connect gate="G$1" pin="P2_0" pad="P2_0"/>
+<connect gate="G$1" pin="P2_1" pad="P2_1"/>
+<connect gate="G$1" pin="P2_2" pad="P2_2"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ANTENNA" value="On-module ceramic chip antenna"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BLE121LR-VISUAL" prefix="U" uservalue="yes">
+<description>&lt;p&gt;Bluetooth Low Energy single-mode long-range module - Bluetooth 4.0 (CC2541). BLE121LR-A variant has an on-module ceramic chip antenna.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BLE121LR-A variant includes keepout/restrict area. Antenna edge of the module should be flush up against the edge of the PCB. See datasheet for variant layout details. &lt;span style="color: #F00;"&gt;IT IS EXTREMELY IMPORTANT THAT YOU FOLLOW THE LAYOUT GUIDELINES FOR THIS MODULE IN ORDER TO ENSURE MAXIMUM RANGE. THIS MEANS THAT YOU NEED A SOLID GROUND PLANE EXTENDING AT LEAST &lt;span style="background: #FF0;"&gt;&amp;nbsp;17 mm&amp;nbsp;&lt;/span&gt; ON THE LEFT AND RIGHT SIDES OF THE MODULE, AS SHOWN IN THE DATASHEET.&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;BLE121LR is a Bluetooth Smart Long Range module targeted for Bluetooth Smart applications where the best possible RF performance and range are required. At +8 dBm TX power and -98 dBm sensitivity BLE121LR has best-in-class RF performance and can provide Bluetooth Smart connectivity up to 450 meters. BLE121LR integrates all features required for a Bluetooth Smart application: Bluetooth radio, software stack and GATT based profiles. and it can also host end user applications, which means no external micro controller is required in size, price or power constrained devices. BLE121LR Bluetooth Smart module also has flexible hardware interfaces to connect to different peripherals or sensors. Although BLE121LR Bluetooth Smart Long Range Module is target for applications requiring high RF performance, it is still has relatively low power consumption and can be power using a standard 3V coin cell batteries.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.bluegiga.com/en-US/products/bluetooth-4.0-modules/ble121lr-bluetooth--smart-long"&gt;https://www.bluegiga.com/en-US/products/bluetooth-4.0-modules/ble121lr-bluetooth--smart-long&lt;/a&gt;&lt;br /&gt;&lt;a href="https://github.com/jrowberg/sf-oshw"&gt;https://github.com/jrowberg/sf-oshw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Last updated 2014-08-02 by Jeff Rowberg &amp;lt;jeff@rowberg.net&amp;gt;&lt;/em&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="BLE121LR-A-VISUAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-A" package="BLE121LR-A">
+<connects>
+<connect gate="G$1" pin="AVDD" pad="AVDD"/>
+<connect gate="G$1" pin="DCDC" pad="DCDC"/>
+<connect gate="G$1" pin="DVDD" pad="DVDD"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND@10" pad="GND@10"/>
+<connect gate="G$1" pin="GND@11" pad="GND@11"/>
+<connect gate="G$1" pin="GND@12" pad="GND@12"/>
+<connect gate="G$1" pin="GND@13" pad="GND@13"/>
+<connect gate="G$1" pin="GND@2" pad="GND@2"/>
+<connect gate="G$1" pin="GND@3" pad="GND@3"/>
+<connect gate="G$1" pin="GND@4" pad="GND@4"/>
+<connect gate="G$1" pin="GND@5" pad="GND@5"/>
+<connect gate="G$1" pin="GND@6" pad="GND@6"/>
+<connect gate="G$1" pin="GND@7" pad="GND@7"/>
+<connect gate="G$1" pin="GND@8" pad="GND@8"/>
+<connect gate="G$1" pin="GND@9" pad="GND@9"/>
+<connect gate="G$1" pin="NC" pad="NC"/>
+<connect gate="G$1" pin="P0_0" pad="P0_0"/>
+<connect gate="G$1" pin="P0_1" pad="P0_1"/>
+<connect gate="G$1" pin="P0_2" pad="P0_2"/>
+<connect gate="G$1" pin="P0_3" pad="P0_3"/>
+<connect gate="G$1" pin="P0_4" pad="P0_4"/>
+<connect gate="G$1" pin="P0_5" pad="P0_5"/>
+<connect gate="G$1" pin="P0_6" pad="P0_6"/>
+<connect gate="G$1" pin="P0_7" pad="P0_7"/>
+<connect gate="G$1" pin="P1_2" pad="P1_2"/>
+<connect gate="G$1" pin="P1_3" pad="P1_3"/>
+<connect gate="G$1" pin="P1_4" pad="P1_4"/>
+<connect gate="G$1" pin="P1_5" pad="P1_5"/>
+<connect gate="G$1" pin="P1_6" pad="P1_6"/>
+<connect gate="G$1" pin="P2_0" pad="P2_0"/>
+<connect gate="G$1" pin="P2_1" pad="P2_1"/>
+<connect gate="G$1" pin="P2_2" pad="P2_2"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ANTENNA" value="On-module ceramic chip antenna"/>
+</technology>
 </technologies>
 </device>
 </devices>
