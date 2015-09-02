@@ -22,10 +22,10 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
@@ -1715,6 +1715,306 @@
 <rectangle x1="-3.75" y1="3.05" x2="3.75" y2="6.5" layer="43"/>
 <rectangle x1="-2" y1="5" x2="1" y2="6" layer="51"/>
 </package>
+<package name="CC-DONGLE">
+<smd name="RESET" x="2.54" y="0" dx="1" dy="1" layer="1" roundness="100" rot="R180"/>
+<smd name="P2_2" x="1.27" y="0" dx="1" dy="1" layer="1" roundness="100" rot="R180"/>
+<smd name="P2_1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" rot="R180"/>
+<smd name="3V3" x="-1.27" y="0" dx="1" dy="1" layer="1" roundness="100" rot="R180"/>
+<smd name="GND" x="-2.54" y="0" dx="1" dy="1" layer="1" roundness="100" rot="R180"/>
+<rectangle x1="-3.04" y1="-0.5" x2="-2.04" y2="0.5" layer="21" rot="R180"/>
+</package>
+<package name="BT121-A">
+<description>&lt;p&gt;Bluetooth 4.0 dual-mode module (Smart Ready) - BT121-A variant has an on-module ceramic chip antenna.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BT121-A variant includes keepout/restrict area. Antenna edge of the module should be flush up against the edge of the PCB. See datasheet for variant layout details. &lt;span style="color: #F00;"&gt;IT IS EXTREMELY IMPORTANT THAT YOU FOLLOW THE LAYOUT GUIDELINES FOR THIS MODULE IN ORDER TO ENSURE MAXIMUM RANGE. THIS MEANS THAT YOU NEED A SOLID GROUND PLANE EXTENDING AT LEAST &lt;span style="background: #FF0;"&gt;&amp;nbsp;20 mm&amp;nbsp;&lt;/span&gt; ON THE LEFT AND RIGHT SIDES OF THE MODULE, AS SHOWN IN THE DATASHEET.&lt;/span&gt; Also, this module contains four internal pins which are used for programming during the manufacturing process. These pins should not be soldered, and so they are left out of the Eagle package. However, they are also shown in the tDocu layer for reference. You should ensure that no unmasked traces or vias are present under these pins. Properly masked traces and vias are safe.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;BT121 is a Bluetooth Smart Ready module targeted for embedded applications that require both Bluetooth Smart and Classic functionality.&lt;/p&gt;
+&lt;p&gt;It integrates a high performance Bluetooth radio, a low-power ARM Cortex microcontroller and Bluegiga Bluetooth Smart stack software. BT121 can be used as a Bluetooth modem in devices where the end-user application runs on a external host processor, but applications can be loaded also on the embedded micro-controller for truly standalone devices where size and cost needs to be minimized.&lt;/p&gt;
+&lt;p&gt;BT121 Bluetooth Smart Ready Module supports Bluetooth SPP, Apple's iAP1 and iAP2 profiles as well GATT based Bluetooth Smart profiles.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.bluegiga.com/en-US/products/bluetooth-4.0-modules/bt121-bluetooth--smart-ready"&gt;https://www.bluegiga.com/en-US/products/bluetooth-4.0-modules/bt121-bluetooth--smart-ready&lt;/a&gt;&lt;br /&gt;&lt;a href="https://github.com/jrowberg/sf-oshw"&gt;https://github.com/jrowberg/sf-oshw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Last updated 2015-03-21 by Jeff Rowberg &amp;lt;jeff@rowberg.net&amp;gt;&lt;/em&gt;&lt;/p&gt;</description>
+<wire x1="-5.5" y1="-6.95" x2="-5.5" y2="6.95" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="6.95" x2="5.5" y2="6.95" width="0.127" layer="21"/>
+<wire x1="5.5" y1="6.95" x2="5.5" y2="-6.95" width="0.127" layer="21"/>
+<wire x1="5.5" y1="-6.95" x2="-5.5" y2="-6.95" width="0.127" layer="21"/>
+<smd name="PB4" x="-5.1" y="-2" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PB3" x="-5.1" y="-1" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA4" x="-5.1" y="0" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA5" x="-5.1" y="1" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA6" x="-5.1" y="2" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA7" x="-5.1" y="3" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="VDD" x="5.1" y="3" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@5" x="5.1" y="4" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@6" x="5.1" y="5" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@7" x="5.1" y="6" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@2" x="-5.1" y="4" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="RF" x="-5.1" y="5" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND" x="-5.1" y="6" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PB13" x="1" y="-6.55" dx="0.7" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="PB12" x="0" y="-6.55" dx="0.7" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="PB10" x="-1" y="-6.55" dx="0.7" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="PB9" x="-2" y="-6.55" dx="0.7" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="PB8" x="-3" y="-6.55" dx="0.7" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="PB7" x="-5.1" y="-5" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PB6" x="-5.1" y="-4" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PB5" x="-5.1" y="-3" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PB14" x="2" y="-6.55" dx="0.7" dy="2" layer="1" roundness="100"/>
+<smd name="PB15" x="3" y="-6.55" dx="0.7" dy="2" layer="1" roundness="100"/>
+<smd name="RESET" x="5.1" y="-5" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="BOOT0" x="5.1" y="-4" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<text x="-4" y="5.7" size="0.6096" layer="51" rot="SR0">1</text>
+<text x="-2.75" y="-5.4" size="0.6096" layer="51" rot="SR90">14</text>
+<text x="3.25" y="-5.4" size="0.6096" layer="51" rot="SR90">20</text>
+<text x="3" y="5.7" size="0.6096" layer="51" rot="SR0">33</text>
+<text x="-5.55" y="7.3" size="1.016" layer="25" rot="SR0">&gt;NAME</text>
+<text x="-5.55" y="-8.3" size="1.016" layer="27" rot="SR0">&gt;VALUE</text>
+<smd name="PA13" x="5.1" y="-3" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA14" x="5.1" y="-2" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA12" x="5.1" y="-1" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA11" x="5.1" y="0" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA10" x="5.1" y="1" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA9" x="5.1" y="2" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<rectangle x1="-3.75" y1="3.55" x2="3.75" y2="6.95" layer="39"/>
+<rectangle x1="-3.75" y1="3.55" x2="3.75" y2="6.95" layer="40"/>
+<rectangle x1="-3.75" y1="3.55" x2="3.75" y2="6.95" layer="41"/>
+<rectangle x1="-3.75" y1="3.55" x2="3.75" y2="6.95" layer="42"/>
+<rectangle x1="-3.75" y1="3.55" x2="3.75" y2="6.95" layer="43"/>
+<rectangle x1="-2" y1="5.45" x2="1" y2="6.45" layer="51"/>
+<smd name="GND@3" x="-5.1" y="-6" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@4" x="5.1" y="-6" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<polygon width="0.127" layer="51">
+<vertex x="-2.25" y="2.6"/>
+<vertex x="-1.25" y="2.6" curve="-90"/>
+<vertex x="-0.75" y="2.1" curve="-90"/>
+<vertex x="-1.25" y="1.6"/>
+<vertex x="-2.25" y="1.6" curve="-90"/>
+<vertex x="-2.75" y="2.1" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="1.25" y="2.6"/>
+<vertex x="2.25" y="2.6" curve="-90"/>
+<vertex x="2.75" y="2.1" curve="-90"/>
+<vertex x="2.25" y="1.6"/>
+<vertex x="1.25" y="1.6" curve="-90"/>
+<vertex x="0.75" y="2.1" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="-2.25" y="0.6"/>
+<vertex x="-1.25" y="0.6" curve="-90"/>
+<vertex x="-0.75" y="0.1" curve="-90"/>
+<vertex x="-1.25" y="-0.4"/>
+<vertex x="-2.25" y="-0.4" curve="-90"/>
+<vertex x="-2.75" y="0.1" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="1.25" y="0.6"/>
+<vertex x="2.25" y="0.6" curve="-90"/>
+<vertex x="2.75" y="0.1" curve="-90"/>
+<vertex x="2.25" y="-0.4"/>
+<vertex x="1.25" y="-0.4" curve="-90"/>
+<vertex x="0.75" y="0.1" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="-2.25" y="-1.4"/>
+<vertex x="-1.25" y="-1.4" curve="-90"/>
+<vertex x="-0.75" y="-1.9" curve="-90"/>
+<vertex x="-1.25" y="-2.4"/>
+<vertex x="-2.25" y="-2.4" curve="-90"/>
+<vertex x="-2.75" y="-1.9" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="1.25" y="-1.4"/>
+<vertex x="2.25" y="-1.4" curve="-90"/>
+<vertex x="2.75" y="-1.9" curve="-90"/>
+<vertex x="2.25" y="-2.4"/>
+<vertex x="1.25" y="-2.4" curve="-90"/>
+<vertex x="0.75" y="-1.9" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="-2.25" y="-3.4"/>
+<vertex x="-1.25" y="-3.4" curve="-90"/>
+<vertex x="-0.75" y="-3.9" curve="-90"/>
+<vertex x="-1.25" y="-4.4"/>
+<vertex x="-2.25" y="-4.4" curve="-90"/>
+<vertex x="-2.75" y="-3.9" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="1.25" y="-3.4"/>
+<vertex x="2.25" y="-3.4" curve="-90"/>
+<vertex x="2.75" y="-3.9" curve="-90"/>
+<vertex x="2.25" y="-4.4"/>
+<vertex x="1.25" y="-4.4" curve="-90"/>
+<vertex x="0.75" y="-3.9" curve="-90"/>
+</polygon>
+</package>
+<package name="BT121-N">
+<description>&lt;p&gt;Bluetooth 4.0 dual-mode module (Smart Ready) - BT121-N variant has an RF pin for routing the antenna output externally.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This module contains four internal pins which are used for programming during the manufacturing process. These pins should not be soldered, and so they are left out of the Eagle package. However, they are also shown in the tDocu layer for reference. You should ensure that no unmasked traces or vias are present under these pins. Properly masked traces and vias are safe.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;BT121 is a Bluetooth Smart Ready module targeted for embedded applications that require both Bluetooth Smart and Classic functionality.&lt;/p&gt;
+&lt;p&gt;It integrates a high performance Bluetooth radio, a low-power ARM Cortex microcontroller and Bluegiga Bluetooth Smart stack software. BT121 can be used as a Bluetooth modem in devices where the end-user application runs on a external host processor, but applications can be loaded also on the embedded micro-controller for truly standalone devices where size and cost needs to be minimized.&lt;/p&gt;
+&lt;p&gt;BT121 Bluetooth Smart Ready Module supports Bluetooth SPP, Apple's iAP1 and iAP2 profiles as well GATT based Bluetooth Smart profiles.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.bluegiga.com/en-US/products/bluetooth-4.0-modules/bt121-bluetooth--smart-ready"&gt;https://www.bluegiga.com/en-US/products/bluetooth-4.0-modules/bt121-bluetooth--smart-ready&lt;/a&gt;&lt;br /&gt;&lt;a href="https://github.com/jrowberg/sf-oshw"&gt;https://github.com/jrowberg/sf-oshw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Last updated 2015-03-21 by Jeff Rowberg &amp;lt;jeff@rowberg.net&amp;gt;&lt;/em&gt;&lt;/p&gt;</description>
+<wire x1="-5.5" y1="-6.95" x2="-5.5" y2="6.95" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="6.95" x2="5.5" y2="6.95" width="0.127" layer="21"/>
+<wire x1="5.5" y1="6.95" x2="5.5" y2="-6.95" width="0.127" layer="21"/>
+<wire x1="5.5" y1="-6.95" x2="-5.5" y2="-6.95" width="0.127" layer="21"/>
+<smd name="PB4" x="-5.1" y="-2" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PB3" x="-5.1" y="-1" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA4" x="-5.1" y="0" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA5" x="-5.1" y="1" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA6" x="-5.1" y="2" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA7" x="-5.1" y="3" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="VDD" x="5.1" y="3" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@5" x="5.1" y="4" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@6" x="5.1" y="5" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@7" x="5.1" y="6" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@2" x="-5.1" y="4" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="RF" x="-5.1" y="5" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND" x="-5.1" y="6" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PB13" x="1" y="-6.55" dx="0.7" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="PB12" x="0" y="-6.55" dx="0.7" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="PB10" x="-1" y="-6.55" dx="0.7" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="PB9" x="-2" y="-6.55" dx="0.7" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="PB8" x="-3" y="-6.55" dx="0.7" dy="2" layer="1" roundness="100" rot="R180"/>
+<smd name="PB7" x="-5.1" y="-5" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PB6" x="-5.1" y="-4" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PB5" x="-5.1" y="-3" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PB14" x="2" y="-6.55" dx="0.7" dy="2" layer="1" roundness="100"/>
+<smd name="PB15" x="3" y="-6.55" dx="0.7" dy="2" layer="1" roundness="100"/>
+<smd name="RESET" x="5.1" y="-5" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="BOOT0" x="5.1" y="-4" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<text x="-4" y="5.7" size="0.6096" layer="51" rot="SR0">1</text>
+<text x="-2.75" y="-5.4" size="0.6096" layer="51" rot="SR90">14</text>
+<text x="3.25" y="-5.4" size="0.6096" layer="51" rot="SR90">20</text>
+<text x="3" y="5.7" size="0.6096" layer="51" rot="SR0">33</text>
+<text x="-5.55" y="7.3" size="1.016" layer="25" rot="SR0">&gt;NAME</text>
+<text x="-5.55" y="-8.3" size="1.016" layer="27" rot="SR0">&gt;VALUE</text>
+<smd name="PA13" x="5.1" y="-3" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA14" x="5.1" y="-2" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA12" x="5.1" y="-1" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA11" x="5.1" y="0" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA10" x="5.1" y="1" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="PA9" x="5.1" y="2" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@3" x="-5.1" y="-6" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@4" x="5.1" y="-6" dx="0.7" dy="2" layer="1" roundness="100" rot="R90"/>
+<polygon width="0.127" layer="51">
+<vertex x="-2.25" y="2.6"/>
+<vertex x="-1.25" y="2.6" curve="-90"/>
+<vertex x="-0.75" y="2.1" curve="-90"/>
+<vertex x="-1.25" y="1.6"/>
+<vertex x="-2.25" y="1.6" curve="-90"/>
+<vertex x="-2.75" y="2.1" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="1.25" y="2.6"/>
+<vertex x="2.25" y="2.6" curve="-90"/>
+<vertex x="2.75" y="2.1" curve="-90"/>
+<vertex x="2.25" y="1.6"/>
+<vertex x="1.25" y="1.6" curve="-90"/>
+<vertex x="0.75" y="2.1" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="-2.25" y="0.6"/>
+<vertex x="-1.25" y="0.6" curve="-90"/>
+<vertex x="-0.75" y="0.1" curve="-90"/>
+<vertex x="-1.25" y="-0.4"/>
+<vertex x="-2.25" y="-0.4" curve="-90"/>
+<vertex x="-2.75" y="0.1" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="1.25" y="0.6"/>
+<vertex x="2.25" y="0.6" curve="-90"/>
+<vertex x="2.75" y="0.1" curve="-90"/>
+<vertex x="2.25" y="-0.4"/>
+<vertex x="1.25" y="-0.4" curve="-90"/>
+<vertex x="0.75" y="0.1" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="-2.25" y="-1.4"/>
+<vertex x="-1.25" y="-1.4" curve="-90"/>
+<vertex x="-0.75" y="-1.9" curve="-90"/>
+<vertex x="-1.25" y="-2.4"/>
+<vertex x="-2.25" y="-2.4" curve="-90"/>
+<vertex x="-2.75" y="-1.9" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="1.25" y="-1.4"/>
+<vertex x="2.25" y="-1.4" curve="-90"/>
+<vertex x="2.75" y="-1.9" curve="-90"/>
+<vertex x="2.25" y="-2.4"/>
+<vertex x="1.25" y="-2.4" curve="-90"/>
+<vertex x="0.75" y="-1.9" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="-2.25" y="-3.4"/>
+<vertex x="-1.25" y="-3.4" curve="-90"/>
+<vertex x="-0.75" y="-3.9" curve="-90"/>
+<vertex x="-1.25" y="-4.4"/>
+<vertex x="-2.25" y="-4.4" curve="-90"/>
+<vertex x="-2.75" y="-3.9" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="1.25" y="-3.4"/>
+<vertex x="2.25" y="-3.4" curve="-90"/>
+<vertex x="2.75" y="-3.9" curve="-90"/>
+<vertex x="2.25" y="-4.4"/>
+<vertex x="1.25" y="-4.4" curve="-90"/>
+<vertex x="0.75" y="-3.9" curve="-90"/>
+</polygon>
+</package>
+<package name="BGM111-A">
+<description>&lt;p&gt;Bluetooth 4.1 (4.2 ready) low-energy module (Bluetooth Smart) - BGM111-A variant has an on-module ceramic chip antenna.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BGM111-A variant includes keepout/restrict area. Antenna edge of the module should be flush up against the edge of the PCB. See datasheet for variant layout details. &lt;span style="color: #F00;"&gt;IT IS EXTREMELY IMPORTANT THAT YOU FOLLOW THE LAYOUT GUIDELINES FOR THIS MODULE IN ORDER TO ENSURE MAXIMUM RANGE. THIS MEANS THAT YOU NEED A SOLID GROUND PLANE EXTENDING IDEALLY &lt;span style="background: #FF0;"&gt;&amp;nbsp;17 mm&amp;nbsp;&lt;/span&gt; ON THE LEFT AND RIGHT SIDES OF THE MODULE, AS SHOWN IN THE DATASHEET.&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Silicon Labs Blue Gecko BGM111 Bluetooth® Smart module integrates our next generation wireless SoC with a complete Bluetooth Smart software stack and antenna to provide a complete, pre-certified plug-and-play Bluetooth Smart solution. It solves one of the major customer roadblocks for fast time-to-market as it integrates antenna, software and RF certifications, saving months of engineering effort and testing.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.silabs.com/products/wireless/bluetooth/Pages/BGM111-bluetooth-smart-module.aspx"&gt;https://www.silabs.com/products/wireless/bluetooth/Pages/BGM111-bluetooth-smart-module.aspx&lt;/a&gt;&lt;br /&gt;&lt;a href="https://github.com/jrowberg/sf-oshw"&gt;https://github.com/jrowberg/sf-oshw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Last updated 2015-09-02 by Jeff Rowberg &amp;lt;jeff@rowberg.net&amp;gt;&lt;/em&gt;&lt;/p&gt;</description>
+<wire x1="-6.45" y1="-7.5" x2="-6.45" y2="7.5" width="0.127" layer="21"/>
+<wire x1="-6.45" y1="7.5" x2="6.45" y2="7.5" width="0.127" layer="21"/>
+<wire x1="6.45" y1="7.5" x2="6.45" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="6.45" y1="-7.5" x2="-6.45" y2="-7.5" width="0.127" layer="21"/>
+<smd name="PA4" x="-5.65" y="-2.95" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PA3" x="-5.65" y="-1.75" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PA2" x="-5.65" y="-0.55" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PA1" x="-5.65" y="0.65" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PA0" x="-5.65" y="1.85" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PD15" x="-5.65" y="3.05" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PF7" x="5.65" y="3.05" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="VDD" x="5.65" y="4.25" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="RESET" x="5.65" y="5.45" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="GND@4" x="5.65" y="6.65" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PD14" x="-5.65" y="4.25" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PD13" x="-5.65" y="5.45" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="GND" x="-5.65" y="6.65" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PC9" x="1.2" y="-6.7" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R180"/>
+<smd name="PC8" x="0" y="-6.7" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R180"/>
+<smd name="PC7" x="-1.2" y="-6.7" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R180"/>
+<smd name="PC6" x="-2.4" y="-6.7" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R180"/>
+<smd name="PB13" x="-3.6" y="-6.7" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R180"/>
+<smd name="GND@2" x="-5.65" y="-6.55" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PB11" x="-5.65" y="-5.35" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PA5" x="-5.65" y="-4.15" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PC10" x="2.4" y="-6.7" dx="0.8" dy="2.4" layer="1" roundness="100"/>
+<smd name="PC11" x="3.6" y="-6.7" dx="0.8" dy="2.4" layer="1" roundness="100"/>
+<smd name="GND@3" x="5.65" y="-6.55" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PF0" x="5.65" y="-5.35" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<text x="-4.2" y="6.35" size="0.6096" layer="51" rot="SR0">1</text>
+<text x="-3.35" y="-5.2" size="0.6096" layer="51" rot="SR90">13</text>
+<text x="3.85" y="-5.2" size="0.6096" layer="51" rot="SR90">19</text>
+<text x="3.2" y="6.35" size="0.6096" layer="51" rot="SR0">31</text>
+<text x="-6.5" y="8" size="1.016" layer="25" rot="SR0">&gt;NAME</text>
+<text x="-6.5" y="-9" size="1.016" layer="27" rot="SR0">&gt;VALUE</text>
+<smd name="PF1" x="5.65" y="-4.15" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PF2" x="5.65" y="-2.95" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PF3" x="5.65" y="-1.75" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PF4" x="5.65" y="-0.55" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PF5" x="5.65" y="0.65" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<smd name="PF6" x="5.65" y="1.85" dx="0.8" dy="2.4" layer="1" roundness="100" rot="R90"/>
+<rectangle x1="-3.8" y1="4" x2="3.8" y2="7.5" layer="39"/>
+<rectangle x1="-3.8" y1="4" x2="3.8" y2="7.5" layer="40"/>
+<rectangle x1="-3.8" y1="4" x2="3.8" y2="7.5" layer="41"/>
+<rectangle x1="-3.8" y1="4" x2="3.8" y2="7.5" layer="42"/>
+<rectangle x1="-3.8" y1="4" x2="3.8" y2="7.5" layer="43"/>
+<rectangle x1="-2" y1="5.45" x2="1" y2="6.95" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="WT12-A">
@@ -1822,6 +2122,7 @@
 <pin name="RFGND" x="17.78" y="20.32" visible="pin" length="short" rot="R180"/>
 <wire x1="-12.954" y1="-14.224" x2="-2.032" y2="-14.224" width="0.127" layer="97"/>
 <wire x1="-12.954" y1="-16.764" x2="-2.032" y2="-16.764" width="0.127" layer="97"/>
+<wire x1="-12.954" y1="13.716" x2="-6.096" y2="13.716" width="0.127" layer="97"/>
 </symbol>
 <symbol name="WT21-N">
 <description>&lt;p&gt;Bluegiga WT21-N symbol with pins arranged into logical groups.&lt;/p&gt;
@@ -1863,6 +2164,10 @@
 <pin name="RST" x="-20.32" y="20.32" visible="pin" length="short" direction="in"/>
 <pin name="RF" x="20.32" y="22.86" length="short" direction="pwr" rot="R180"/>
 <pin name="RFGND" x="20.32" y="20.32" length="short" direction="pwr" rot="R180"/>
+<wire x1="7.62" y1="-21.844" x2="14.986" y2="-21.844" width="0.127" layer="97"/>
+<wire x1="-15.494" y1="-19.304" x2="-4.572" y2="-19.304" width="0.127" layer="97"/>
+<wire x1="-15.494" y1="-16.764" x2="-4.572" y2="-16.764" width="0.127" layer="97"/>
+<wire x1="-15.494" y1="21.336" x2="-11.684" y2="21.336" width="0.127" layer="97"/>
 </symbol>
 <symbol name="BLE112-N">
 <description>&lt;p&gt;Bluegiga BLE112-N symbol with pins arranged into logical groups.&lt;/p&gt;
@@ -1997,6 +2302,7 @@
 <pin name="AIO" x="17.78" y="10.16" visible="pin" length="short" rot="R180"/>
 <wire x1="-2.032" y1="-14.224" x2="-12.954" y2="-14.224" width="0.127" layer="97"/>
 <wire x1="-2.032" y1="-16.764" x2="-12.954" y2="-16.764" width="0.127" layer="97"/>
+<wire x1="-12.954" y1="13.716" x2="-6.35" y2="13.716" width="0.127" layer="97"/>
 </symbol>
 <symbol name="BLE112-A">
 <description>&lt;p&gt;Bluegiga BLE112-A/-E symbol with pins arranged into logical groups.&lt;/p&gt;
@@ -2073,6 +2379,10 @@
 <pin name="SPI_CS" x="20.32" y="-25.4" visible="pin" length="short" direction="in" rot="R180"/>
 <pin name="SPI_MOSI" x="20.32" y="-17.78" visible="pin" length="short" direction="in" rot="R180"/>
 <pin name="RST" x="-20.32" y="17.78" visible="pin" length="short" direction="in"/>
+<wire x1="-15.494" y1="18.796" x2="-11.684" y2="18.796" width="0.127" layer="97"/>
+<wire x1="-15.494" y1="-21.844" x2="-4.572" y2="-21.844" width="0.127" layer="97"/>
+<wire x1="-15.494" y1="-19.304" x2="-4.572" y2="-19.304" width="0.127" layer="97"/>
+<wire x1="7.366" y1="-24.384" x2="15.24" y2="-24.384" width="0.127" layer="97"/>
 </symbol>
 <symbol name="BLE112-N-VISUAL">
 <description>&lt;p&gt;Bluegiga BLE112-N symbol with all pins shown according to their physical position on the actual module.&lt;/p&gt;
@@ -2292,6 +2602,10 @@
 <pin name="RST" x="20.32" y="12.7" visible="pin" length="short" direction="in" rot="R180"/>
 <pin name="RF" x="0" y="38.1" visible="pin" length="short" rot="R270"/>
 <pin name="RFGND" x="-2.54" y="38.1" visible="pin" length="short" rot="R270"/>
+<wire x1="9.144" y1="-35.814" x2="9.144" y2="-24.892" width="0.127" layer="97"/>
+<wire x1="4.064" y1="-19.304" x2="14.986" y2="-19.304" width="0.127" layer="97"/>
+<wire x1="7.366" y1="8.636" x2="14.986" y2="8.636" width="0.127" layer="97"/>
+<wire x1="11.176" y1="13.716" x2="14.986" y2="13.716" width="0.127" layer="97"/>
 </symbol>
 <symbol name="WT21-A-VISUAL">
 <description>&lt;p&gt;Bluegiga WT21-A symbol with all pins shown according to their physical position on the actual module.&lt;/p&gt;
@@ -2350,6 +2664,10 @@
 <pin name="SPI_CS" x="20.32" y="7.62" visible="pin" length="short" direction="in" rot="R180"/>
 <pin name="SPI_MOSI" x="20.32" y="10.16" visible="pin" length="short" direction="in" rot="R180"/>
 <pin name="RST" x="20.32" y="12.7" visible="pin" length="short" direction="in" rot="R180"/>
+<wire x1="9.144" y1="-35.814" x2="9.144" y2="-24.892" width="0.127" layer="97"/>
+<wire x1="4.064" y1="-19.304" x2="14.986" y2="-19.304" width="0.127" layer="97"/>
+<wire x1="7.62" y1="8.636" x2="14.986" y2="8.636" width="0.127" layer="97"/>
+<wire x1="11.176" y1="13.716" x2="14.986" y2="13.716" width="0.127" layer="97"/>
 </symbol>
 <symbol name="WT32-A-VISUAL">
 <description>&lt;p&gt;Bluegiga WT32-A/-E symbol with all pins shown according to their physical position on the actual module.&lt;/p&gt;
@@ -2482,6 +2800,9 @@
 <pin name="RF" x="20.32" y="27.94" visible="pin" length="short" rot="R180"/>
 <pin name="RFGND" x="20.32" y="25.4" visible="pin" length="short" rot="R180"/>
 <pin name="GND@18" x="20.32" y="-12.7" visible="pin" length="short" direction="pwr" rot="R180"/>
+<wire x1="8.382" y1="-19.304" x2="15.24" y2="-19.304" width="0.127" layer="97"/>
+<wire x1="-15.494" y1="-14.224" x2="-4.572" y2="-14.224" width="0.127" layer="97"/>
+<wire x1="-15.494" y1="-1.524" x2="-4.572" y2="-1.524" width="0.127" layer="97"/>
 </symbol>
 <symbol name="WT41-A-VISUAL">
 <description>&lt;p&gt;Bluegiga WT41-A/-E symbol with all pins shown according to their physical position on the actual module.&lt;/p&gt;
@@ -2547,6 +2868,9 @@
 <pin name="UART_TX" x="20.32" y="2.54" visible="pin" length="short" direction="out" rot="R180"/>
 <pin name="AIO" x="20.32" y="5.08" visible="pin" length="short" rot="R180"/>
 <pin name="GND@18" x="20.32" y="-12.7" visible="pin" length="short" direction="pwr" rot="R180"/>
+<wire x1="8.382" y1="-19.304" x2="14.986" y2="-19.304" width="0.127" layer="97"/>
+<wire x1="-15.494" y1="-1.524" x2="-4.572" y2="-1.524" width="0.127" layer="97"/>
+<wire x1="-15.494" y1="-14.224" x2="-4.572" y2="-14.224" width="0.127" layer="97"/>
 </symbol>
 <symbol name="BLE113-A">
 <description>&lt;p&gt;Bluegiga BLE113-A symbol with pins arranged into logical groups.&lt;/p&gt;
@@ -3031,6 +3355,154 @@
 <pin name="GND@11" x="22.86" y="12.7" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="GND@12" x="22.86" y="15.24" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="GND@13" x="22.86" y="17.78" visible="pin" length="short" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="BT121-A">
+<wire x1="-15.24" y1="20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
+<text x="-15.24" y="21.59" size="2.54" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-24.13" size="2.54" layer="96">&gt;VALUE</text>
+<pin name="GND" x="-17.78" y="17.78" visible="pin" length="short" direction="pwr"/>
+<pin name="VDD" x="-17.78" y="15.24" visible="pin" length="short" direction="pwr"/>
+<pin name="PB9" x="17.78" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PA14" x="-17.78" y="-17.78" visible="pin" length="short"/>
+<pin name="PA13" x="-17.78" y="-15.24" visible="pin" length="short"/>
+<pin name="BOOT0" x="17.78" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="PB15" x="17.78" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="PB14" x="17.78" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="PB13" x="17.78" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="PB12" x="17.78" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="PB10" x="17.78" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PA12" x="-17.78" y="-12.7" visible="pin" length="short"/>
+<pin name="PA11" x="-17.78" y="-10.16" visible="pin" length="short"/>
+<pin name="PA10" x="-17.78" y="-7.62" visible="pin" length="short"/>
+<pin name="PA9" x="-17.78" y="-5.08" visible="pin" length="short"/>
+<pin name="PA7" x="-17.78" y="-2.54" visible="pin" length="short"/>
+<pin name="PA6" x="-17.78" y="0" visible="pin" length="short"/>
+<pin name="PA5" x="-17.78" y="2.54" visible="pin" length="short"/>
+<pin name="PA4" x="-17.78" y="5.08" visible="pin" length="short"/>
+<pin name="RESET" x="17.78" y="17.78" visible="pin" length="short" direction="in" rot="R180"/>
+<wire x1="12.7" y1="18.796" x2="5.842" y2="18.796" width="0.127" layer="97"/>
+<pin name="PB8" x="17.78" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PB7" x="17.78" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="PB6" x="17.78" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PB5" x="17.78" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PB4" x="17.78" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PB3" x="17.78" y="10.16" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="BT121-N">
+<wire x1="-15.24" y1="20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
+<text x="-15.24" y="21.59" size="2.54" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-24.13" size="2.54" layer="96">&gt;VALUE</text>
+<pin name="GND" x="-17.78" y="17.78" visible="pin" length="short" direction="pwr"/>
+<pin name="VDD" x="-17.78" y="15.24" visible="pin" length="short" direction="pwr"/>
+<pin name="PB9" x="17.78" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PA14" x="-17.78" y="-17.78" visible="pin" length="short"/>
+<pin name="PA13" x="-17.78" y="-15.24" visible="pin" length="short"/>
+<pin name="BOOT0" x="17.78" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="PB15" x="17.78" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="PB14" x="17.78" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="PB13" x="17.78" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="PB12" x="17.78" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="PB10" x="17.78" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PA12" x="-17.78" y="-12.7" visible="pin" length="short"/>
+<pin name="PA11" x="-17.78" y="-10.16" visible="pin" length="short"/>
+<pin name="PA10" x="-17.78" y="-7.62" visible="pin" length="short"/>
+<pin name="PA9" x="-17.78" y="-5.08" visible="pin" length="short"/>
+<pin name="PA7" x="-17.78" y="-2.54" visible="pin" length="short"/>
+<pin name="PA6" x="-17.78" y="0" visible="pin" length="short"/>
+<pin name="PA5" x="-17.78" y="2.54" visible="pin" length="short"/>
+<pin name="PA4" x="-17.78" y="5.08" visible="pin" length="short"/>
+<pin name="RESET" x="17.78" y="17.78" visible="pin" length="short" direction="in" rot="R180"/>
+<wire x1="12.7" y1="18.796" x2="5.842" y2="18.796" width="0.127" layer="97"/>
+<pin name="PB8" x="17.78" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PB7" x="17.78" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="PB6" x="17.78" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PB5" x="17.78" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PB4" x="17.78" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PB3" x="17.78" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="RF" x="-17.78" y="10.16" visible="pin" length="short"/>
+</symbol>
+<symbol name="BGM111-A">
+<wire x1="-15.24" y1="22.86" x2="15.24" y2="22.86" width="0.254" layer="94"/>
+<wire x1="15.24" y1="22.86" x2="15.24" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-22.86" x2="-15.24" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-22.86" x2="-15.24" y2="22.86" width="0.254" layer="94"/>
+<text x="-15.24" y="24.13" size="2.54" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-26.67" size="2.54" layer="96">&gt;VALUE</text>
+<pin name="GND" x="-17.78" y="20.32" visible="pin" length="short" direction="pwr"/>
+<pin name="VDD" x="-17.78" y="17.78" visible="pin" length="short" direction="pwr"/>
+<pin name="PF6" x="17.78" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="PB11" x="-17.78" y="-7.62" visible="pin" length="short"/>
+<pin name="PD15" x="-17.78" y="-20.32" visible="pin" length="short"/>
+<pin name="PF7" x="17.78" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PD14" x="-17.78" y="-17.78" visible="pin" length="short"/>
+<pin name="PD13" x="-17.78" y="-15.24" visible="pin" length="short"/>
+<pin name="PA5" x="-17.78" y="-2.54" visible="pin" length="short"/>
+<pin name="PA4" x="-17.78" y="0" visible="pin" length="short"/>
+<pin name="PA3" x="-17.78" y="2.54" visible="pin" length="short"/>
+<pin name="PA2" x="-17.78" y="5.08" visible="pin" length="short"/>
+<pin name="PA1" x="-17.78" y="7.62" visible="pin" length="short"/>
+<pin name="PA0" x="-17.78" y="10.16" visible="pin" length="short"/>
+<pin name="RESET" x="17.78" y="20.32" visible="pin" length="short" direction="in" rot="R180"/>
+<wire x1="12.7" y1="21.336" x2="5.842" y2="21.336" width="0.127" layer="97"/>
+<pin name="PF5" x="17.78" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PF4" x="17.78" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PF3" x="17.78" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PF2" x="17.78" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="PF1" x="17.78" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="PF0" x="17.78" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="PB13" x="-17.78" y="-10.16" visible="pin" length="short"/>
+<pin name="PC6" x="17.78" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PC7" x="17.78" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="PC8" x="17.78" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="PC9" x="17.78" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="PC10" x="17.78" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="PC11" x="17.78" y="-20.32" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="BGM111-A-VISUAL">
+<wire x1="-15.24" y1="20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
+<text x="-15.24" y="21.59" size="2.54" layer="95">&gt;NAME</text>
+<text x="1.778" y="21.59" size="2.54" layer="96">&gt;VALUE</text>
+<pin name="GND" x="-17.78" y="17.78" visible="pin" length="short" direction="pwr"/>
+<pin name="VDD" x="17.78" y="12.7" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="PF6" x="17.78" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PB11" x="-17.78" y="-7.62" visible="pin" length="short"/>
+<pin name="PD15" x="-17.78" y="10.16" visible="pin" length="short"/>
+<pin name="PF7" x="17.78" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PD14" x="-17.78" y="12.7" visible="pin" length="short"/>
+<pin name="PD13" x="-17.78" y="15.24" visible="pin" length="short"/>
+<pin name="PA5" x="-17.78" y="-5.08" visible="pin" length="short"/>
+<pin name="PA4" x="-17.78" y="-2.54" visible="pin" length="short"/>
+<pin name="PA3" x="-17.78" y="0" visible="pin" length="short"/>
+<pin name="PA2" x="-17.78" y="2.54" visible="pin" length="short"/>
+<pin name="PA1" x="-17.78" y="5.08" visible="pin" length="short"/>
+<pin name="PA0" x="-17.78" y="7.62" visible="pin" length="short"/>
+<pin name="RESET" x="17.78" y="15.24" visible="pin" length="short" direction="in" rot="R180"/>
+<wire x1="12.7" y1="16.256" x2="5.842" y2="16.256" width="0.127" layer="97"/>
+<pin name="PF5" x="17.78" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PF4" x="17.78" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="PF3" x="17.78" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PF2" x="17.78" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PF1" x="17.78" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PF0" x="17.78" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="GND@2" x="-17.78" y="-10.16" visible="pin" length="short" direction="pwr"/>
+<pin name="GND@3" x="17.78" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GND@4" x="17.78" y="17.78" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="PB13" x="-7.62" y="-22.86" visible="pin" length="short" rot="R90"/>
+<pin name="PC6" x="-5.08" y="-22.86" visible="pin" length="short" rot="R90"/>
+<pin name="PC7" x="-2.54" y="-22.86" visible="pin" length="short" rot="R90"/>
+<pin name="PC8" x="0" y="-22.86" visible="pin" length="short" rot="R90"/>
+<pin name="PC9" x="2.54" y="-22.86" visible="pin" length="short" rot="R90"/>
+<pin name="PC10" x="5.08" y="-22.86" visible="pin" length="short" rot="R90"/>
+<pin name="PC11" x="7.62" y="-22.86" visible="pin" length="short" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4871,6 +5343,18 @@
 <technology name=""/>
 </technologies>
 </device>
+<device name="-DONGLE" package="CC-DONGLE">
+<connects>
+<connect gate="G$1" pin="3V3" pad="3V3"/>
+<connect gate="G$1" pin="DC" pad="P2_2"/>
+<connect gate="G$1" pin="DD" pad="P2_1"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="RES" pad="RESET"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CC-DEBUG-PWR" prefix="J">
@@ -5248,6 +5732,156 @@
 <connect gate="G$1" pin="RESET" pad="RESET"/>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ANTENNA" value="On-module ceramic chip antenna"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BT121" prefix="U">
+<description>&lt;p&gt;Bluetooth 4.0 dual-mode module (Smart Ready) - BT121-A variant has an on-module ceramic chip antenna.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BT121-A variant includes keepout/restrict area. Antenna edge of the module should be flush up against the edge of the PCB. See datasheet for variant layout details. &lt;span style="color: #F00;"&gt;IT IS EXTREMELY IMPORTANT THAT YOU FOLLOW THE LAYOUT GUIDELINES FOR THIS MODULE IN ORDER TO ENSURE MAXIMUM RANGE. THIS MEANS THAT YOU NEED A SOLID GROUND PLANE EXTENDING AT LEAST &lt;span style="background: #FF0;"&gt;&amp;nbsp;20 mm&amp;nbsp;&lt;/span&gt; ON THE LEFT AND RIGHT SIDES OF THE MODULE, AS SHOWN IN THE DATASHEET.&lt;/span&gt; Also, this module contains four internal pins which are used for programming during the manufacturing process. These pins should not be soldered, and so they are left out of the Eagle package. However, they are also shown in the tDocu layer for reference. You should ensure that no unmasked traces or vias are present under these pins. Properly masked traces and vias are safe.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;BT121 is a Bluetooth Smart Ready module targeted for embedded applications that require both Bluetooth Smart and Classic functionality.&lt;/p&gt;
+&lt;p&gt;It integrates a high performance Bluetooth radio, a low-power ARM Cortex microcontroller and Bluegiga Bluetooth Smart stack software. BT121 can be used as a Bluetooth modem in devices where the end-user application runs on a external host processor, but applications can be loaded also on the embedded micro-controller for truly standalone devices where size and cost needs to be minimized.&lt;/p&gt;
+&lt;p&gt;BT121 Bluetooth Smart Ready Module supports Bluetooth SPP, Apple's iAP1 and iAP2 profiles as well GATT based Bluetooth Smart profiles.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.bluegiga.com/en-US/products/bluetooth-4.0-modules/bt121-bluetooth--smart-ready"&gt;https://www.bluegiga.com/en-US/products/bluetooth-4.0-modules/bt121-bluetooth--smart-ready&lt;/a&gt;&lt;br /&gt;&lt;a href="https://github.com/jrowberg/sf-oshw"&gt;https://github.com/jrowberg/sf-oshw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Last updated 2015-03-21 by Jeff Rowberg &amp;lt;jeff@rowberg.net&amp;gt;&lt;/em&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="BT121-A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-A" package="BT121-A">
+<connects>
+<connect gate="G$1" pin="BOOT0" pad="BOOT0"/>
+<connect gate="G$1" pin="GND" pad="GND GND@2 GND@3 GND@4 GND@5 GND@6 GND@7 RF"/>
+<connect gate="G$1" pin="PA10" pad="PA10"/>
+<connect gate="G$1" pin="PA11" pad="PA11"/>
+<connect gate="G$1" pin="PA12" pad="PA12"/>
+<connect gate="G$1" pin="PA13" pad="PA13"/>
+<connect gate="G$1" pin="PA14" pad="PA14"/>
+<connect gate="G$1" pin="PA4" pad="PA4"/>
+<connect gate="G$1" pin="PA5" pad="PA5"/>
+<connect gate="G$1" pin="PA6" pad="PA6"/>
+<connect gate="G$1" pin="PA7" pad="PA7"/>
+<connect gate="G$1" pin="PA9" pad="PA9"/>
+<connect gate="G$1" pin="PB10" pad="PB10"/>
+<connect gate="G$1" pin="PB12" pad="PB12"/>
+<connect gate="G$1" pin="PB13" pad="PB13"/>
+<connect gate="G$1" pin="PB14" pad="PB14"/>
+<connect gate="G$1" pin="PB15" pad="PB15"/>
+<connect gate="G$1" pin="PB3" pad="PB3"/>
+<connect gate="G$1" pin="PB4" pad="PB4"/>
+<connect gate="G$1" pin="PB5" pad="PB5"/>
+<connect gate="G$1" pin="PB6" pad="PB6"/>
+<connect gate="G$1" pin="PB7" pad="PB7"/>
+<connect gate="G$1" pin="PB8" pad="PB8"/>
+<connect gate="G$1" pin="PB9" pad="PB9"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ANTENNA" value="On-module ceramic chip antenna"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BGM111" prefix="U">
+<description>&lt;p&gt;Bluetooth 4.1 (4.2 ready) low-energy module (Bluetooth Smart) - BGM111-A variant has an on-module ceramic chip antenna.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BGM111-A variant includes keepout/restrict area. Antenna edge of the module should be flush up against the edge of the PCB. See datasheet for variant layout details. &lt;span style="color: #F00;"&gt;IT IS EXTREMELY IMPORTANT THAT YOU FOLLOW THE LAYOUT GUIDELINES FOR THIS MODULE IN ORDER TO ENSURE MAXIMUM RANGE. THIS MEANS THAT YOU NEED A SOLID GROUND PLANE EXTENDING IDEALLY &lt;span style="background: #FF0;"&gt;&amp;nbsp;17 mm&amp;nbsp;&lt;/span&gt; ON THE LEFT AND RIGHT SIDES OF THE MODULE, AS SHOWN IN THE DATASHEET.&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Silicon Labs Blue Gecko BGM111 Bluetooth® Smart module integrates our next generation wireless SoC with a complete Bluetooth Smart software stack and antenna to provide a complete, pre-certified plug-and-play Bluetooth Smart solution. It solves one of the major customer roadblocks for fast time-to-market as it integrates antenna, software and RF certifications, saving months of engineering effort and testing.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.silabs.com/products/wireless/bluetooth/Pages/BGM111-bluetooth-smart-module.aspx"&gt;https://www.silabs.com/products/wireless/bluetooth/Pages/BGM111-bluetooth-smart-module.aspx&lt;/a&gt;&lt;br /&gt;&lt;a href="https://github.com/jrowberg/sf-oshw"&gt;https://github.com/jrowberg/sf-oshw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Last updated 2015-09-02 by Jeff Rowberg &amp;lt;jeff@rowberg.net&amp;gt;&lt;/em&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="BGM111-A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-A" package="BGM111-A">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND GND@2 GND@3 GND@4"/>
+<connect gate="G$1" pin="PA0" pad="PA0"/>
+<connect gate="G$1" pin="PA1" pad="PA1"/>
+<connect gate="G$1" pin="PA2" pad="PA2"/>
+<connect gate="G$1" pin="PA3" pad="PA3"/>
+<connect gate="G$1" pin="PA4" pad="PA4"/>
+<connect gate="G$1" pin="PA5" pad="PA5"/>
+<connect gate="G$1" pin="PB11" pad="PB11"/>
+<connect gate="G$1" pin="PB13" pad="PB13"/>
+<connect gate="G$1" pin="PC10" pad="PC10"/>
+<connect gate="G$1" pin="PC11" pad="PC11"/>
+<connect gate="G$1" pin="PC6" pad="PC6"/>
+<connect gate="G$1" pin="PC7" pad="PC7"/>
+<connect gate="G$1" pin="PC8" pad="PC8"/>
+<connect gate="G$1" pin="PC9" pad="PC9"/>
+<connect gate="G$1" pin="PD13" pad="PD13"/>
+<connect gate="G$1" pin="PD14" pad="PD14"/>
+<connect gate="G$1" pin="PD15" pad="PD15"/>
+<connect gate="G$1" pin="PF0" pad="PF0"/>
+<connect gate="G$1" pin="PF1" pad="PF1"/>
+<connect gate="G$1" pin="PF2" pad="PF2"/>
+<connect gate="G$1" pin="PF3" pad="PF3"/>
+<connect gate="G$1" pin="PF4" pad="PF4"/>
+<connect gate="G$1" pin="PF5" pad="PF5"/>
+<connect gate="G$1" pin="PF6" pad="PF6"/>
+<connect gate="G$1" pin="PF7" pad="PF7"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="ANTANNA" value="On-module ceramic chip antenna"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BGM111-VISUAL" prefix="U">
+<description>&lt;p&gt;Bluetooth 4.1 (4.2 ready) low-energy module (Bluetooth Smart) - BGM111-A variant has an on-module ceramic chip antenna.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BGM111-A variant includes keepout/restrict area. Antenna edge of the module should be flush up against the edge of the PCB. See datasheet for variant layout details. &lt;span style="color: #F00;"&gt;IT IS EXTREMELY IMPORTANT THAT YOU FOLLOW THE LAYOUT GUIDELINES FOR THIS MODULE IN ORDER TO ENSURE MAXIMUM RANGE. THIS MEANS THAT YOU NEED A SOLID GROUND PLANE EXTENDING IDEALLY &lt;span style="background: #FF0;"&gt;&amp;nbsp;17 mm&amp;nbsp;&lt;/span&gt; ON THE LEFT AND RIGHT SIDES OF THE MODULE, AS SHOWN IN THE DATASHEET.&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Silicon Labs Blue Gecko BGM111 Bluetooth® Smart module integrates our next generation wireless SoC with a complete Bluetooth Smart software stack and antenna to provide a complete, pre-certified plug-and-play Bluetooth Smart solution. It solves one of the major customer roadblocks for fast time-to-market as it integrates antenna, software and RF certifications, saving months of engineering effort and testing.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.silabs.com/products/wireless/bluetooth/Pages/BGM111-bluetooth-smart-module.aspx"&gt;https://www.silabs.com/products/wireless/bluetooth/Pages/BGM111-bluetooth-smart-module.aspx&lt;/a&gt;&lt;br /&gt;&lt;a href="https://github.com/jrowberg/sf-oshw"&gt;https://github.com/jrowberg/sf-oshw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Last updated 2015-09-02 by Jeff Rowberg &amp;lt;jeff@rowberg.net&amp;gt;&lt;/em&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="BGM111-A-VISUAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-A" package="BGM111-A">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND@2" pad="GND@2"/>
+<connect gate="G$1" pin="GND@3" pad="GND@3"/>
+<connect gate="G$1" pin="GND@4" pad="GND@4"/>
+<connect gate="G$1" pin="PA0" pad="PA0"/>
+<connect gate="G$1" pin="PA1" pad="PA1"/>
+<connect gate="G$1" pin="PA2" pad="PA2"/>
+<connect gate="G$1" pin="PA3" pad="PA3"/>
+<connect gate="G$1" pin="PA4" pad="PA4"/>
+<connect gate="G$1" pin="PA5" pad="PA5"/>
+<connect gate="G$1" pin="PB11" pad="PB11"/>
+<connect gate="G$1" pin="PB13" pad="PB13"/>
+<connect gate="G$1" pin="PC10" pad="PC10"/>
+<connect gate="G$1" pin="PC11" pad="PC11"/>
+<connect gate="G$1" pin="PC6" pad="PC6"/>
+<connect gate="G$1" pin="PC7" pad="PC7"/>
+<connect gate="G$1" pin="PC8" pad="PC8"/>
+<connect gate="G$1" pin="PC9" pad="PC9"/>
+<connect gate="G$1" pin="PD13" pad="PD13"/>
+<connect gate="G$1" pin="PD14" pad="PD14"/>
+<connect gate="G$1" pin="PD15" pad="PD15"/>
+<connect gate="G$1" pin="PF0" pad="PF0"/>
+<connect gate="G$1" pin="PF1" pad="PF1"/>
+<connect gate="G$1" pin="PF2" pad="PF2"/>
+<connect gate="G$1" pin="PF3" pad="PF3"/>
+<connect gate="G$1" pin="PF4" pad="PF4"/>
+<connect gate="G$1" pin="PF5" pad="PF5"/>
+<connect gate="G$1" pin="PF6" pad="PF6"/>
+<connect gate="G$1" pin="PF7" pad="PF7"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
 </connects>
 <technologies>
 <technology name="">
