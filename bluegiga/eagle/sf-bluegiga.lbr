@@ -3473,10 +3473,8 @@
 <text x="1.778" y="21.59" size="2.54" layer="96">&gt;VALUE</text>
 <pin name="GND" x="-17.78" y="17.78" visible="pin" length="short" direction="pwr"/>
 <pin name="VDD" x="17.78" y="12.7" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="PF6" x="17.78" y="-5.08" visible="pin" length="short" rot="R180"/>
 <pin name="PB11" x="-17.78" y="-7.62" visible="pin" length="short"/>
 <pin name="PD15" x="-17.78" y="10.16" visible="pin" length="short"/>
-<pin name="PF7" x="17.78" y="-7.62" visible="pin" length="short" rot="R180"/>
 <pin name="PD14" x="-17.78" y="12.7" visible="pin" length="short"/>
 <pin name="PD13" x="-17.78" y="15.24" visible="pin" length="short"/>
 <pin name="PA5" x="-17.78" y="-5.08" visible="pin" length="short"/>
@@ -3487,12 +3485,14 @@
 <pin name="PA0" x="-17.78" y="7.62" visible="pin" length="short"/>
 <pin name="RESET" x="17.78" y="15.24" visible="pin" length="short" direction="in" rot="R180"/>
 <wire x1="12.7" y1="16.256" x2="5.842" y2="16.256" width="0.127" layer="97"/>
-<pin name="PF5" x="17.78" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="PF4" x="17.78" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="PF3" x="17.78" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="PF2" x="17.78" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="PF1" x="17.78" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="PF0" x="17.78" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="PF0" x="17.78" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PF1" x="17.78" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PF2" x="17.78" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PF3" x="17.78" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="PF4" x="17.78" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="PF5" x="17.78" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PF6" x="17.78" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PF7" x="17.78" y="10.16" visible="pin" length="short" rot="R180"/>
 <pin name="GND@2" x="-17.78" y="-10.16" visible="pin" length="short" direction="pwr"/>
 <pin name="GND@3" x="17.78" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
 <pin name="GND@4" x="17.78" y="17.78" visible="pin" length="short" direction="pwr" rot="R180"/>
